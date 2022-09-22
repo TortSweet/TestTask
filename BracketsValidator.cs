@@ -21,11 +21,11 @@ namespace ConsoleApp1
 
             foreach (var VARIABLE in strData)
             {
-                Console.WriteLine(validStringIncluding(VARIABLE));
+                Console.WriteLine(IsValid(VARIABLE));
             }
         }
 
-        public static bool validStringIncluding(string s)
+        public static bool IsValid(string s)
         {
             if (s == null || s.Length % 2 != 0)
             {
